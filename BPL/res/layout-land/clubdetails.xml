@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ClubLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+
+    <TextView
+        android:id="@+id/clubName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:text="CLUB NAME"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/clubName_tv"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/arsenal" />
+
+    <TextView
+        android:id="@+id/abbr_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logo_iv"
+        android:layout_alignLeft="@+id/logo_iv"
+        android:text="ABBR"
+        android:textColor="@android:color/secondary_text_dark"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nickName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logo_iv"
+        android:layout_toRightOf="@+id/clubName_tv"
+        android:text="Nick name1, Nick name 2 ....."
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/notify"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/manager_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clubName_tv"
+        android:layout_below="@+id/nickName_tv"
+        android:text="@string/manager"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/wins_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/manager_tv"
+        android:text="@string/wins" />
+
+    <TextView
+        android:id="@+id/lost_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wins_tv"
+        android:layout_alignBottom="@+id/wins_tv"
+        android:layout_alignLeft="@+id/nickName_tv"
+        android:text="@string/lost" />
+
+    <TextView
+        android:id="@+id/sponsor_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/wins_tv"
+        android:layout_below="@+id/logo_iv"
+        android:text="@string/sponsor" />
+
+    <TextView
+        android:id="@+id/homeground_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/manager_tv"
+        android:layout_below="@+id/manager_tv"
+        android:text="@string/homeground"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/points_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_toLeftOf="@+id/logo_iv"
+        android:text="@string/points" />
+
+    <TextView
+        android:id="@+id/website_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sponsor_tv"
+        android:layout_alignBottom="@+id/sponsor_tv"
+        android:layout_toLeftOf="@+id/points_tv"
+        android:text="@string/website" />
+
+    <TextView
+        android:id="@+id/bestrank_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/homeground_tv"
+        android:layout_alignBottom="@+id/homeground_tv"
+        android:layout_toLeftOf="@+id/points_tv"
+        android:text="@string/bestrank"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/titles_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bestrank_tv"
+        android:layout_below="@+id/nickName_tv"
+        android:text="@string/titles" />
+
+    <TextView
+        android:id="@+id/founded_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wins_tv"
+        android:layout_alignRight="@+id/manager_tv"
+        android:text="@string/founded"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/draw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/draw" />
+
+    <TextView
+        android:id="@+id/squad_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/wins_tv"
+        android:layout_below="@+id/textView1"
+        android:text="@string/squad" />
+
+    <GridView
+        android:id="@+id/playersList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/squad_tv"
+        android:layout_toRightOf="@+id/squad_tv"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+
+    </GridView>
+
+</RelativeLayout>

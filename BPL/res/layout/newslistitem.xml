@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/newsDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/newsTitle"
+        android:lines="@integer/desc_lines_count"
+        android:text="TextView"
+        android:textStyle="bold" />
+
+    <!--  ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="51dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/newsDesc"
+        android:src="@drawable/applogo" />-->
+
+    <TextView
+        android:id="@+id/newsDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/newsDesc"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/green"
+        android:textStyle="bold" />
+
+</RelativeLayout>

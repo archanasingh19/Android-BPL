@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtrophylt" >
+
+    <Spinner
+        android:id="@+id/res_clubspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingTop="0dip"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/resultslistView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/res_clubspinner"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp"
+        android:paddingBottom="@dimen/padding_drawer" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/res_no_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/no_match_today"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/dateSelBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/res_clubspinner"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/filter_date"
+        android:src="@drawable/calicon" />
+
+    <ImageButton
+        android:id="@+id/teamSelBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/res_clubspinner"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/dateSelBtn1"
+        android:contentDescription="@string/filter_team"
+        android:scaleType="center"
+        android:src="@drawable/teamicon" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/res_clubspinner"
+        android:layout_alignBottom="@+id/res_clubspinner"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@+id/teamSelBtn1"
+        android:text="Please Select"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+</RelativeLayout>

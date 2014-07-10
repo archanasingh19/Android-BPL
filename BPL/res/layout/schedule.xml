@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/clubspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingTop="0dip"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/no_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_match_today"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/dateSelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/filter_date"
+        android:src="@drawable/calicon" />
+
+    <ImageButton
+        android:id="@+id/teamSelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dateSelBtn"
+        android:layout_toLeftOf="@+id/dateSelBtn"
+        android:contentDescription="@string/filter_team"
+        android:scaleType="center"
+        android:src="@drawable/teamicon" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clubspinner"
+        android:layout_alignBottom="@+id/clubspinner"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/teamSelBtn"
+        android:text="Please Select"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/schduleListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/clubspinner"
+        android:divider="@color/skyblue"
+        android:dividerHeight="1dp"
+        android:paddingBottom="@dimen/padding_drawer"
+        android:paddingTop="@dimen/padding_mini" >
+
+    </ListView>
+
+</RelativeLayout>

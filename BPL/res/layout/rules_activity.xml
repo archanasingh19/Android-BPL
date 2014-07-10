@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:scrollbars="vertical" >
+
+    <TextView
+        android:id="@+id/compFormat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:text="@string/compformat"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/padding_medium"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/compFormat" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/compFormat"
+            android:layout_below="@+id/compFormat"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:layout_marginTop="21dp"
+            android:paddingBottom="@dimen/padding_btmbar"
+            android:text="@string/formatTxt"
+            android:textColorLink="@color/blue"
+            android:textStyle="bold" />
+    </ScrollView>
+
+</RelativeLayout>

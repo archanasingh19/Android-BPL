@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+    
+     <TableLayout
+  android:id="@+id/header"
+  android:layout_width="fill_parent"
+  android:layout_marginRight="2dp"
+  android:layout_marginLeft="2dp"
+  android:layout_height="wrap_content"
+  android:paddingTop="2dp">
+  
+  <TableRow>
+   <TextView
+   
+    android:text="@string/position"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp"
+     />
+   <TextView
+       android:text="@string/club"
+    android:gravity="left"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp"
+    />
+   
+   <TextView
+   android:text="@string/played"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp" />
+   
+   <TextView
+   android:text="@string/wins_cs"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp" />
+   
+   <TextView
+   android:text="@string/draw_cs"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp" />
+   
+   <TextView
+   android:text="@string/lost_cs"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp" />
+   
+   <TextView
+   android:text="@string/points_cs"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp" />
+    </TableRow>
+ </TableLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+          <TableLayout
+        android:id="@+id/clubstandingtable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:paddingBottom="@dimen/padding_btmbar"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_small" >
+   
+        
+        
+
+         <TableRow>
+   <TextView
+   
+    android:text="@string/position"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+        android:layout_height="0dp"
+    android:paddingBottom="10dp"
+     />
+   <TextView
+       android:text="@string/club"
+    android:gravity="left"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+        android:layout_height="0dp"
+    android:paddingBottom="10dp"
+    />
+   
+   <TextView
+   android:text="@string/played"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+        android:layout_height="0dp"
+    android:paddingBottom="10dp" />
+   
+   <TextView
+   android:text="@string/wins_cs"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+        android:layout_height="0dp"
+    android:paddingBottom="10dp" />
+   
+   <TextView
+   android:text="@string/draw_cs"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+        android:layout_height="0dp"
+    android:paddingBottom="10dp" />
+   
+   <TextView
+   android:text="@string/lost_cs"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+        android:layout_height="0dp"
+    android:paddingBottom="10dp" />
+   
+   <TextView
+   android:text="@string/points_cs"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+        android:layout_height="0dp"
+    android:paddingBottom="10dp" />
+  
+  </TableRow>
+        
+    </TableLayout>
+</ScrollView>
+</LinearLayout>

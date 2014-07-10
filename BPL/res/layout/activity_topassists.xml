@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    
+    
+    <TableLayout
+  android:id="@+id/header"
+  android:layout_width="fill_parent"
+  android:layout_marginRight="2dp"
+  android:layout_marginLeft="2dp"
+  android:layout_height="wrap_content"
+  android:paddingTop="2dp"
+  >
+  
+  <TableRow>
+   <TextView
+   
+    android:text="@string/player_name"
+    android:gravity="left"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp"
+     />
+   <TextView
+       android:text="@string/club"
+    android:gravity="left"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp"
+    />
+   
+   <TextView
+   android:text="@string/assists"
+    android:gravity="center"    
+    android:background="@color/skyblue"
+    android:textSize="15dp"
+    android:textAppearance="@style/boldText"
+    android:layout_weight=".5"
+    android:paddingLeft="5dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp" />
+  
+  </TableRow>
+ </TableLayout>
+    
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TableLayout
+            android:id="@+id/topassiststable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_btmbar"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_mini" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

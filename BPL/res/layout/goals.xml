@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grey"
+    >
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grey" >
+
+
+
+    <TextView
+        android:id="@+id/resinfodttime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/about"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/resinfovenue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/resinfodttime"
+        android:gravity="center_horizontal"
+        android:text="@string/about"
+        android:textColor="@color/green"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/resinfoTeam2Name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/resinfovenue"
+        android:layout_marginTop="24dp"
+        android:gravity="right"
+        android:text="@string/close"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+
+
+
+    <TextView
+        android:id="@+id/resinfoteam1Name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resinfoTeam2Name"
+        android:layout_alignBottom="@+id/resinfoTeam2Name"
+        android:text="@string/about"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/resinfoteam1logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/resinfoteam1Name"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/arsenal" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/resinfoTeamscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resinfoteam1logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/club"
+        android:textColor="@color/skyblue"
+        android:textSize="@dimen/padding_large"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/resinfoteam2logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/resinfoTeamscore"
+        android:src="@drawable/astonvilla" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/resinfoteam1scorers"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/resinfoteam1logo"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:text="@string/about"
+        android:textColor="@color/green"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/resinfoteam2scorers"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/resinfoteam1scorers"
+        android:gravity="right"
+        android:text="@string/close"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+    
+</ScrollView>
