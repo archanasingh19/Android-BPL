@@ -115,6 +115,7 @@ public class DbAsyncTask extends AsyncTask<String, Void, String> {
 			    editor.commit();
 			}
 			URL url = new URL(urls[0]);
+			
 			URLConnection connection = url.openConnection();
 			HttpURLConnection httpConnection =(HttpURLConnection)connection;
 			soccerDBHelper opensoccerHelperClass = new soccerDBHelper(mContext);
